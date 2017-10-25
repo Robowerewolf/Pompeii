@@ -1,0 +1,119 @@
+#include <iostream>
+#include <allegro5/allegro.h>
+#include <allegro5/allegro_image.h>
+#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
+using namespace std;
+
+int  input;
+int input2;
+
+int main() {
+	cout << "AD. 63" << endl;
+	cout << "A strong earthquake heavily damages Pompeii, the city at the foot of Mount " << endl;
+	cout << "Vesuvius. Fearing an eruption of the volcano, many of the 20,000 inhabitants " << endl;
+	cout << "leave their homes in a panicked flight. Those who remain behind begin to rebuild Pompeii." << endl;
+	cout << endl;
+	cout << "AD. 79" << endl;
+	cout << "Pompeii's development into an important trade city has reached its peak. Over " << endl;
+	cout << "the past few years, numerous Roman citizens, Famous gladiators, and rich" << endl;
+	cout << "patricians have returned to the city - moving into the new and splendid " << endl;
+	cout << "buildings in the shadow of Vesuvius. The fear of the volcano has long since been ";
+	cout << "forgotten. When the citizens of pompeii begin their daily work on August 24," << endl;
+	cout << "they have no inkling of the imminent catastrophe. By sunrise of the following " << endl;
+	cout << "morning, pompeii is buried under ash and lava. " << endl;
+	cout << endl;
+	cout << "Do you want to be Marcus Garasemus(1), or Athena Fufia(2)?" << endl;
+	cin >> input;
+	switch (input) {
+	case 1:
+		cout << "Marcus wakes up in his house. He is greeted by his wife, Aphrodite." << endl;
+		cout << endl;
+		cout << "Aphrodite says 'Morning dear.' " << endl;
+		cout << endl;
+		cout << " 'Morning'(1), or grunt(2), or  'What time is it?'(3) " << endl;
+		cin >> input2;
+		if (input2 == 1 || input2 == 2)
+			cout << "Aphrodite says 'Cockious left early. He seemed angry' " << endl;
+		else if (input2 == 3)
+			cout << "Aphrodite says 'It's still early. You have time to eat.' " << endl;
+
+			cout << endl;
+			cout << "Marcus and Aphrodite go to the kitchen to eat. Marcus glances out the window." << endl;
+			cout << endl;
+			cout << "Marcus says 'Vesuvius looks very eerie this morning.' " << endl;
+			cout << endl;
+			cout << "Aphrodite says 'I thought I saw some smoke up there last night. Must have been a wildfire.' " << endl;
+			cout << endl;
+			cout << "Cockious enters through the door" << endl;
+			cout << endl;
+			cout << "Marcus says 'Where have you been?'" << endl;
+			cout << endl;
+			cout << "Cockious says nothing" << endl;
+			cout << endl;
+			cout << "Marcus says 'I asked you a question.' " << endl;
+			cout << endl;
+			cout << "Cockious says 'I went hunting.' " << endl;
+			cout << endl;
+			cout << "Marcus says 'At seven in the morning you just decide to go hunting?' " << endl;
+			cout << endl;
+			cout << "Cockious says 'I had to clear my head.' " << endl;
+			cout << endl;
+			cout << " 'Ok, sit down and eat'(1) or 'Of what, a brain?'(2)" << endl;
+			cin >> input2;
+			if (input2 == 1)
+				cout << "Cockious sits down and eats with his parents." << endl;
+			else if (input2 == 2)
+				cout << "Cockious gets angry and storms out the door." << endl;
+			cout << endl;
+
+			cout << "After they eat, Marcus goes to pay respects at Pompey's home." << endl;
+
+			break;
+
+	case 2:
+		cout << "Athena is just getting off a shift, and she is talking to her friend, Ocellina." << endl;
+		cout << endl;
+		cout << "Ocellina says 'Have you seen Lyco lately? He said he wanted to talk to you.' " << endl;
+		cout << endl;
+		cout << "Athena says 'I haven't seen him since yesterday.' " << endl;
+		cout << endl;
+		cout << "Ballio, a fat man, and a frequent customer of Athena, approaches." << endl;
+		cout << endl;
+		cout << "Ocellina says 'There goes Ballio, tell him I'm busy.' and she walks away" << endl;
+		cout << endl;
+		cout << "Ballio says 'Good day, Athena. Are you working?' " << endl;
+		cout << endl;
+		cout << "Athena says 'No, I'm not. Ocellina isn't either. You'll have to find someone " << endl;
+		cout << "else.'" << endl;
+		cout << endl;
+		cout << "Ballio walks away without a word. Athena goes to find Lyco. She finds him at" << endl;
+		cout << "work, and approaches him." << endl;
+		cout << endl;
+		cout << "Athena says 'Lyco, Ocellina said you wanted to see me?' " << endl;
+		cout << endl;
+		cout << "Lyco says 'Yes. I just wanted to see your beautiful eyes.' " << endl;
+		cout << endl;
+		cout << "Athena says 'Oh, Lyco. What would I do without you?' " << endl;
+		cout << endl;
+		cout << "Lyco says 'Anyway, I have to get back to work. If you talk to Ocellina, tell her thanks.' " << endl;
+		cout << endl;
+		cout << "Athena says 'Farewell.' and she goes to see Pompey before dinner." << endl;
+		cout << endl;
+		cout << "When she arrives, Pompey immediately greets her." << endl;
+		cout << endl;
+		cout << "Pompey says 'I see you decided to grace me with your presence today, Athena.' " << endl;
+		cout << endl;
+		cout << "I apologize, m'lord.(1), or I see you decided to grace the town with your " << endl;
+		cout << "bald head today, Pompey.(2)" << endl;
+		cin >> input2;
+		if (input2 == 1)
+			cout << "Pompey says 'Even so, It's good to see that the scum of this village still respect their lord.' " << endl;
+		else if (input2 == 2)
+			cout << "Pompey says nothing, but he scowls at her." << endl;
+		cout << endl;
+
+		cout << "Athena pays her respects, and leaves as soon as possible" << endl;
+		break;
+	}
+}
